@@ -306,7 +306,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode {
         }
     };
 
-    // status bra brightness control
+    // status bar brightness control
     Runnable mLongPressBrightnessChange = new Runnable() {
         @Override
         public void run() {
@@ -361,6 +361,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode {
             mBrightnessControl = !autoBrightness && Settings.System.getIntForUser(
                     resolver, Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
                     0, UserHandle.USER_CURRENT) == 1;
+            updateBatteryIcons();
         }
     }
 
