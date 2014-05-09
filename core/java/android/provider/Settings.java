@@ -2514,10 +2514,14 @@ public final class Settings {
         public static final String VOLUME_LINK_NOTIFICATION = "volume_link_notification";
 
         /**
-         * Quick Settings Quick Pulldown
-         *
+         * Allows to show the background activity back the lockscreen
          * @hide
          */
+        public static final String LOCKSCREEN_SEE_THROUGH = "lockscreen_see_through";
+
+        /**
+         * Quick Settings Quick Pulldown
+         *
         public static final String QS_QUICK_PULLDOWN = "qs_quick_pulldown";
 
         /**
